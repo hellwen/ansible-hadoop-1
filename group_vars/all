@@ -2,7 +2,7 @@
 ##
 
 # Cluster name
-site_name: YOUR_CLUSTER_NAME
+site_name: mycluster
 
 # IPv4 maximum transmission unit, 9216 is the maximum for Intel/Cisco hardware
 mtu: 9216
@@ -16,7 +16,7 @@ install_oracle_jdk: True
 with_ganglia: True
 
 # For iptable - hosts ip range
-ip_range: 192.168.10.1-192.168.10.255
+ip_range: 192.168.1.1-192.168.254.255
 
 hadoop:
   dfs_dir_parent: /data/hadoop

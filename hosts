@@ -2,42 +2,21 @@
 # ============
 
 [zookeepers]
-master.nflabs.com zookeeper_id=1
-master2.nflabs.com zookeeper_id=2
-pel.nflabs.com zookeeper_id=3
+master.hadoop.local zookeeper_id=1
+master2.hadoop.local zookeeper_id=2
+data.hadoop.local zookeeper_id=3
 
 # HADDOP DEPLOYMENT
 # =================
 
 [journalnodes]
-master.nflabs.com
-master2.nflabs.com
-pel.nflabs.com
+master.hadoop.local
+master2.hadoop.local
+data.hadoop.local
 
 [namenodes]
-master.nflabs.com
-master2.nflabs.com
+master.hadoop.local
+master2.hadoop.local
 
 [datanodes]
-data.nflabs.com
-
-
-# ELASTICSEARCH
-# =============
-
-[elasticsearch]
-
-# SPARK
-# =====
-[sparkworkers]
-data.nflabs.com
-
-
-[sparkmasters]
-master.nflabs.com
-master2.nflabs.com
-
-# Monitoring
-# ==========
-[monitor]
-pel.nflabs.com
+data.hadoop.local
